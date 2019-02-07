@@ -1,0 +1,33 @@
+swagger: "2.0"
+info:
+  description: swagger configurations
+  version: "1.0.0"
+  title: timer_o_batic
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+# Paths supported by the server application
+paths:
+  /timer/uptime:
+    get:
+      operationId: api.timer.get_current_time
+      tags:
+        - Time
+      description: Get current system time
+
+      responses:
+        200:
+          description: Successfully fetched current system time
+          schema:
+            type: object
+            properties:
+              currentDateTime:
+                type: string
+              responseTimeMs:
+                type: string
+              executionTimeMs:
+                type: string

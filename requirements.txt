@@ -1,0 +1,4 @@
+Flask==0.12.1
+connexion==2.0
+swagger-ui-bundle==0.0.3
+python-dateutil==2.7.5
